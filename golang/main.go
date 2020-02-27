@@ -1,8 +1,12 @@
 package main
 
-import "demo/golang/leetcode"
+import (
+	"demo/golang/leetcode"
+	"fmt"
+)
 
 func main() {
-	leetcode.MajorityElement()
+	res := leetcode.ClimbStairs(6)
+	fmt.Println(res)
 	return
 }

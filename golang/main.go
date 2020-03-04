@@ -12,16 +12,12 @@ func main() {
 	}
 	node := &head;
 	for i := 1; i < len(l); i++ {
-	 	node = addNode(l[i], node)
+		node.Next = &leetcode.ListNode{
+			Val: l[i],
+			Next: nil,
+		}
+		node = node.Next
 	 }
 	leetcode.ReverseList(&head)
 	return
-}
-
-func addNode(val int, node *leetcode.ListNode) *leetcode.ListNode {
-	node.Next = &leetcode.ListNode{
-		Val: val,
-		Next: nil,
-	}
-	return node;
 }

@@ -1,17 +1,22 @@
 package leetcode
 
-import "fmt"
-
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
 func ReverseList(head *ListNode) *ListNode {
-	for head.Next != nil {
-		fmt.Println(head.Val)
-		head = head.Next
+	var prev *ListNode
+	var current *ListNode
+	var temp *ListNode
+	for {
+		current = head
+		temp = current
+		current.Next = prev
+		prev = current
+		current = temp
+		break
 	}
 
-	return head
+	return prev
 }

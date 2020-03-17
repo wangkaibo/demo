@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"demo/golang/leetcode"
 	"demo/golang/protocol"
 	"encoding/binary"
 	"fmt"
@@ -13,12 +14,17 @@ import (
 )
 
 func main() {
-	mode := os.Args[1]
-	if mode == "1" {
-		listen()
-	} else {
-		connect()
-	}
+	//mode := os.Args[1]
+	//if mode == "1" {
+	//	listen()
+	//} else {
+	//	connect()
+	//}
+	str := "a"
+	res := leetcode.LengthOfLongestSubstring(str)
+
+	log.Println(res)
+
 	return
 }
 

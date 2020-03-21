@@ -20,8 +20,9 @@ func main() {
 	//} else {
 	//	connect()
 	//}
-	str := "a"
-	res := leetcode.LengthOfLongestSubstring(str)
+	str1 := "584"
+	str2 := "18"
+	res := leetcode.AddStrings(str1, str2)
 
 	log.Println(res)
 

@@ -20,9 +20,8 @@ func main() {
 	//} else {
 	//	connect()
 	//}
-	str1 := "584"
-	str2 := "18"
-	res := leetcode.AddStrings(str1, str2)
+	x := 123;
+	res := leetcode.Reverse(x)
 
 	log.Println(res)
 

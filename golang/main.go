@@ -20,8 +20,9 @@ func main() {
 	//} else {
 	//	connect()
 	//}
-	x := 123;
-	res := leetcode.Reverse(x)
+	l1 := leetcode.InitListNode([]int{1,2,3,4,5,5})
+	l2 := leetcode.InitListNode([]int{4,5,6,7,3,5})
+	res := leetcode.MergeTwoLists(l1, l2)
 
 	log.Println(res)
 

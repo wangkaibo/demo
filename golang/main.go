@@ -20,9 +20,9 @@ func main() {
 	//} else {
 	//	connect()
 	//}
-	l1 := leetcode.InitListNode([]int{1,2,3,4,5,5})
-	l2 := leetcode.InitListNode([]int{4,5,6,7,3,5})
-	res := leetcode.GetIntersectionNode(l1, l2)
+	//l1 := leetcode.InitListNode([]int{1,2,3,4,5,5})
+	//l2 := leetcode.InitListNode([]int{4,5,6,7,3,5})
+	res := leetcode.ClimbStairs(4)
 
 	log.Println(res)
 

@@ -21,7 +21,7 @@ func main() {
 	//	connect()
 	//}
 	//l1 := leetcode.InitListNode([]int{1,2,3,4,5,5})
-	res := leetcode.IsPalindrome("A man, a plan, a canal: Panama")
+	res := leetcode.RomanToInt("IVXLCDM")
 
 	log.Println(res)
 

@@ -8,9 +8,9 @@ func LengthOfLongestSubstring(s string) int {
 	tempChar := ""
 	for end < l {
 		tempChar = string(s[end])
-		endIndex, endExist := temp[tempChar]
-		if endExist && endIndex >= start {
-			start = endIndex + 1
+		existCharIndex, endExist := temp[tempChar]
+		if endExist && existCharIndex >= start {
+			start = existCharIndex + 1
 		}
 		temp[tempChar] = end
 		end++

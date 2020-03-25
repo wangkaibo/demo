@@ -21,7 +21,7 @@ func main() {
 	//	connect()
 	//}
 	//l1 := leetcode.InitListNode([]int{1,2,3,4,5,5})
-	res := leetcode.RomanToInt("IVXLCDM")
+	res := leetcode.IntToRoman(1994)
 
 	log.Println(res)
 

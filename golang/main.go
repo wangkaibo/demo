@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"demo/golang/leetcode"
 	"demo/golang/protocol"
 	"encoding/binary"
 	"fmt"
@@ -13,12 +14,17 @@ import (
 )
 
 func main() {
-	mode := os.Args[1]
-	if mode == "1" {
-		listen()
-	} else {
-		connect()
-	}
+	//mode := os.Args[1]
+	//if mode == "1" {
+	//	listen()
+	//} else {
+	//	connect()
+	//}
+	//l1 := leetcode.InitListNode([]int{1,2,3,4,5,5})
+	res := leetcode.IsPalindrome("A man, a plan, a canal: Panama")
+
+	log.Println(res)
+
 	return
 }
 

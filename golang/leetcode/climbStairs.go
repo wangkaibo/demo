@@ -1,17 +1,16 @@
 package leetcode
 
 func ClimbStairs(n int) int {
-	dp := map[int]int{
-		1:1,
-		2:2,
+	if n == 1 {
+		return 1
 	}
-	for i := 3; i <= n; i++ {
-		dpi := dp[i - 1] + dp[i - 2]
-		dp[i] = dpi
-		if i > 3 {
-			delete(dp, 1)
-			delete(dp, i - 2)
-		}
+	if n == 2 {
+		return 2
 	}
-	return dp[n]
+	a, b := 1, 2
+	for i := 3; i < n; i++ {
+		a, b = b, a + b
+	}
+
+	return a + b
 }
